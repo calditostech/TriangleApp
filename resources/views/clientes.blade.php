@@ -28,16 +28,17 @@
             </tr>
             </thead>
             <tbody>
+            @foreach ($clientes as $cliente)
             <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row">{{$cliente->affiliate_id}}</th>
+            <td>{{$cliente->name}}</td>
+            <td>{{$cliente->latitude}}</td>
+            <td>{{$cliente->longitude}}</td>
             </tr>
+            @endforeach  
             </tbody>
         </table>
     </div>
-
-
+    
 </body>
 </html>
